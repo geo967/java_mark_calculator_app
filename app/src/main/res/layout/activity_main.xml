@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_a_value"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="100dp"/>
+
+    <ImageButton
+        android:id="@+id/image_button1"
+        android:src="@drawable/ic_action_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text1"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/plus_image"/>
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/text1"
+        android:layout_marginTop="136dp"
+        android:layout_marginStart="60dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLength="6"
+        android:textColor="#E91E63"
+        android:cursorVisible="true"
+        android:textSize="24sp"
+        android:autofillHints="0"
+        android:hint="@string/_00000" />
+
+    <ImageButton
+        android:id="@+id/image_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/minus"
+        android:layout_toEndOf="@+id/input_text"
+        android:layout_marginTop="140dp"
+        android:contentDescription="@string/minus_button"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:src="@drawable/reset"
+        android:layout_below="@+id/input_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90dp"
+        android:contentDescription="@string/refresh_button"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/max_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_max_marks"
+        android:layout_below="@+id/reset"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="55dp"/>
+
+    <ImageButton
+        android:id="@+id/plus_button_for_max_mark"
+        android:src="@drawable/ic_action_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/reset"
+        android:layout_marginTop="88dp"
+        android:layout_marginStart="190dp"
+        android:contentDescription="@string/plus_image"/>
+
+    <EditText
+        android:id="@+id/input_max_mark"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/plus_button_for_max_mark"
+        android:layout_below="@+id/reset"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="10dp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:gravity="center"
+        android:textColor="#E91E63"
+        android:cursorVisible="true"
+        android:textSize="24sp"
+        android:autofillHints="0"
+        android:hint="@string/_00000" />
+
+    <ImageButton
+        android:id="@+id/minus_button_for_max_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/minus"
+        android:layout_toEndOf="@+id/input_max_mark"
+        android:layout_below="@+id/reset"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/minus_button"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_button_for_max_mark"
+        android:src="@drawable/reset"
+        android:layout_below="@+id/input_max_mark"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="88dp"
+        android:contentDescription="@string/refresh_button"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="280dp"
+        android:layout_below="@id/reset_button_for_max_mark"
+        android:text="@string/output"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
